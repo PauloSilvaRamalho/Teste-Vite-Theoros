@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* corrigido: border -> border-box */
+    scroll-behavior: smooth;
+    color: rgb(173, 158, 134);
+  }
+
+html, body, #root {
+  height: 100%; /* necessário para usar 100% ou 100vh nos filhos */
+}
+
+main{
+  background: black;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div{
+  background: rgb(77, 54, 92);
+}
+

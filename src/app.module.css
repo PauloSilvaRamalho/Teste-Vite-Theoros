@@ -1,0 +1,14 @@
+.container {
+  /* garante que o container ocupe toda a altura da viewport */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* faz a section ocupar o espaço disponível dentro do container */
+.s2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
