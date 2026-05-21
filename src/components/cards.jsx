@@ -1,13 +1,24 @@
-import React from "react";
-import "./cards.css";
+import s from './card.module.css'
 
-export function Card({ imgSrc, alt, children }) {
+
+export const Card = ({imgSrc, alt, text}) => {
     return (
-        <div className="card">
-            <img src={imgSrc} alt={alt} className="card-img" />
-            <div className="card-overlay">
-                {children}
-            </div>
+        <div className={s.card}>
+            <img src={imgSrc} alt={alt} />
+            
+
+            <p>{text}</p>
         </div>
-    );
+    )
+}
+
+export const CardEsp = ({imgSrc, alt, text}) => {
+    return (
+        <div className={s.cardesp}>
+            <img src={imgSrc} alt={alt} />
+
+
+            <p>{text}</p>
+        </div>
+    )
 }

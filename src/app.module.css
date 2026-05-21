@@ -1,8 +1,16 @@
+/* reset global mínimo dentro do módulo */
+:global(html, body) {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   /* garante que o container ocupe toda a altura da viewport */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+    
 }
 
 /* faz a section ocupar o espaço disponível dentro do container */
@@ -12,3 +20,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.containerdois {
+  display: flex;
+  flex-direction: row;
+}
+
