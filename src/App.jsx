@@ -17,10 +17,20 @@ function App() {
         <section id="s2" className={s.s2}>
           <Card imgSrc={"/img1.jpg"} alt="Card img1" text="Lorem Ipsum..." title="Card 1" />
         </section>
-        <div className={s.containerdois}></div>
+        </div>
+        <div className={s.containerdois}>
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>
         <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>  
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>    
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>    
       </div>
     </>
   )
