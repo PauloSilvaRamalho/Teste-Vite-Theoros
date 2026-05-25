@@ -4,12 +4,22 @@
   padding: 0;
 }
 
+.maincont {
+  /* garante que o container ocupe toda a altura da viewport */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 75%;
+  background-image: url('/img4.webp');
+  background-size: cover;
+  background-position-y: 11%;
+}
+
 .container {
   /* garante que o container ocupe toda a altura da viewport */
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* faz a section ocupar o espaço disponível dentro do container */
@@ -18,12 +28,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 .containerdois {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  overflow: hidden;  
 }
+
 

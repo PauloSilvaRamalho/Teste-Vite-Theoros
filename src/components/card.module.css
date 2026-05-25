@@ -13,9 +13,9 @@ body { margin: 0; }
 
 /* tornar o tamanho do card fixo dentro do flex */
 .card {
-    flex: 0 0 300px;       /* não cresce nem encolhe, base fixa */
+    flex: 0 0 700px;       /* não cresce nem encolhe, base fixa */
     width: 700px;          /* largura fixa */
-    height: 160px;         /* altura fixa */
+    height: 300px;         /* altura fixa */
     box-sizing: border-box;
     margin: 0;
     background-color: var(--fl);
