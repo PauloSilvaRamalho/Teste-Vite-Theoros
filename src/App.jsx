@@ -19,11 +19,11 @@ function App() {
     <main>
       <div className={s.maincont}>
       <div className={s.container}>
-        <section id="s2" className={s.s2} ref={scrollRef}>
-          {/* <button className="seta-esq" onClick={() => scrollRef.current?.scrollBy({ left: -300, behavior: 'smooth' })}>◀</button> */}
+        <div id="s2"  className={s.s2}>
+         
           <Card imgSrc={"/img1.jpg"} alt="Card img1" text="Lorem Ipsum..." title="Card 1"className={s.cartaum}/>
-          {/* <button className="seta-dir" onClick={() => scrollRef.current?.scrollBy({ left: 300, behavior: 'smooth' })}>▶</button> */}
-        </section>
+          
+        </div>
         </div>
         
 
