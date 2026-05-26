@@ -3,7 +3,7 @@ import s from './card.module.css'
 
 export const Card = ({imgSrc, alt, text}) => {
     return (
-        <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" className={s.card}>
+        <a href="https://www.youtube.com/watch?v=uuVaiMk8-pk" className={s.card}>
             <img src={imgSrc} alt={alt} />
             
 
@@ -14,7 +14,7 @@ export const Card = ({imgSrc, alt, text}) => {
 
 export const CardEsp = ({imgSrc, alt, text}) => {
     return (
-        <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" className={s.cardesp}>
+        <a href="https://www.youtube.com/watch?v=uuVaiMk8-pk" className={s.cardesp}>
             <img src={imgSrc} alt={alt} />
 
 

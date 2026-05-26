@@ -8,7 +8,7 @@
 
 html, body, #root {
   height: 100%; /* necessário para usar 100% ou 100vh nos filhos */
-  background: url('/img3.png') no-repeat center center fixed;
+  background:  url('/img3.png') no-repeat center center fixed;
   background-size: cover;
 }
 
