@@ -8,12 +8,14 @@
   /* garante que o container ocupe toda a altura da viewport */
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 75%;
-  background-image: url('/img4.webp');
-  background-size: cover;
-  background-position-y: 11%;
+  height: 95%;
+  width: 60%;
+  background-size:cover;
+  border: 3px solid transparent;
+  border-image: linear-gradient(90deg, rgb(94, 77, 46)) 1;
+  background: linear-gradient(180deg, #352719 0%, #47352600 100%);
 }
+
 
 .container {
   /* garante que o container ocupe toda a altura da viewport */
@@ -39,13 +41,73 @@
   overflow: hidden;  
 }
 
+
 .menuImg {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   object-position: center;
 }
+
+.menuContainer {
+    position: fixed;
+    top: -55px;
+    right: -290px;
+    width: 55%;
+    height: 112%;
+    background-image: url('/openMenu.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    clip-path: inset(0% 0% 100% 0%);
+    transition: visibility 0s linear 0.8s, opacity 0.8s ease-out, clip-path 0.8s ease-out;
+    z-index: 1002;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu.menuAberto {
+    clip-path: inset(0% 0% 0% 0%);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.8s ease-out, clip-path 0.8s ease-out;
+}
+
+
+.slide {
+    flex-shrink: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+@keyframes snapIn {
+  from {
+    opacity: 0.25;
+    transform: scale(0.97);
+  }
+   to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.slide.snap-in {
+    animation: snapIn 0.38s cubic-bezier(.2, 0, .4, 1) forwards;
+}
+  
+
+
 
 

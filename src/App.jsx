@@ -9,15 +9,60 @@ import cardImg2 from "/img2.jpg";
 import cardImg3 from "/img3.png";
 
 function App() {
-  const [count, setCount] = useState(0)
-  const scrollRef = useRef(null);
+
+ const [menuAberto, setMenuAberto] = useState(false);
+
+  function chamarMenu() {
+    setMenuAberto(!menuAberto);
+  }
+
+  function fecharMenu() {
+    setMenuAberto(false);
+  }
 
   return (
     <>
      <nav>Theoros
-      <a href="menu" className={s.menu}>
+      <a
+        className={s.menu}
+        id="botao-menu"
+        href="#"
+        role="button"
+        aria-expanded={menuAberto}
+        onClick={(e) => {
+          e.preventDefault();
+          chamarMenu();
+        }}
+      >
         <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" />
       </a>
+
+       <div className={`${s.menuContainer} ${menuAberto ? s.aberto : ''}`}>
+          
+          <div className={s.tituloMenu}>
+            <a
+              href="#"
+              role="button"
+              onClick={(e) => {
+                e.preventDefault();
+                fecharMenu();
+              }}
+            >
+              Fechar
+            </a>
+          </div>
+
+          <div className={s.opcoesMenu}>
+            <a href="/">Home</a>
+            <a href="/rotas/criar/criar.html">Criar</a>
+            <a href="/rotas/ficha/ficha.html">Ficha</a>
+            <a href="/rotas/perfil/perfil.html">Perfil</a>
+          </div>
+
+        </div>
+    
+
+
      </nav>
     <main>
       <div className={s.maincont}>
@@ -28,9 +73,6 @@ function App() {
           
         </div>
         </div>
-        
-
-
         <div className={s.containerdois}>
         <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
@@ -44,8 +86,6 @@ function App() {
         <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>
-        
-            
       </div>
       </div>
       </main>
