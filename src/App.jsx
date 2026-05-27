@@ -6,6 +6,7 @@ import { CardEsp } from './components/cards';
 //import das imagens
 import cardImg1 from "/img1.jpg";
 import cardImg2 from "/img2.jpg";
+import cardImg3 from "/img3.png";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,9 @@ function App() {
   return (
     <>
      <nav>Theoros
-      <a href="menu">menu</a>
+      <a href="menu" className={s.menu}>
+        <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" />
+      </a>
      </nav>
     <main>
       <div className={s.maincont}>

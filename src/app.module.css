@@ -39,4 +39,18 @@
   overflow: hidden;  
 }
 
+.menuImg {
+  width: 200px;
+  height: 100px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  
+  z-index: 3;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  right: 5rem;
+}
+
 
