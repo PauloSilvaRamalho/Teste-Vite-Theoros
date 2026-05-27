@@ -43,6 +43,7 @@ nav a{
   align-items: center;
   display: flex;
   justify-content: center;
+  object-position: center;
 }
 
 section{

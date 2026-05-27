@@ -45,12 +45,7 @@
   max-width: 100%;
   object-fit: cover;
   display: block;
-  
-  z-index: 3;
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  right: 5rem;
+  object-position: center;
 }
 
 
