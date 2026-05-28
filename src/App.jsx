@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-     <nav>Theoros
+     <nav><img src="/logo.png" alt="Logo" className={s.logo} />
       <a
         className={s.menu}
         id="botao-menu"
@@ -37,30 +37,22 @@ function App() {
         <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" />
       </a>
 
-       <div className={`${s.menuContainer} ${menuAberto ? s.aberto : ''}`}>
-          
-          <div className={s.tituloMenu}>
-            <a
-              href="#"
-              role="button"
+      <div  className={`${s.menuContainer} ${menuAberto ? s.menuAberto : ''}`}>
+      <button
               onClick={(e) => {
                 e.preventDefault();
                 fecharMenu();
               }}
             >
-              Fechar
-            </a>
-          </div>
-
-          <div className={s.opcoesMenu}>
+              <img className={s.menuOpen} src="/openMenu.webp" alt="Menu" />    
+        </button>
+        <div className={s.opcoesMenu}>
             <a href="/">Home</a>
             <a href="/rotas/criar/criar.html">Criar</a>
             <a href="/rotas/ficha/ficha.html">Ficha</a>
             <a href="/rotas/perfil/perfil.html">Perfil</a>
-          </div>
-
         </div>
-    
+        </div>    
 
 
      </nav>
@@ -86,6 +78,13 @@ function App() {
         <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>
+         <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>
+         <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>
+        
       </div>
       </div>
       </main>

@@ -7,18 +7,23 @@
   }
 
 html, body, #root {
-  height: 100%; /* necessário para usar 100% ou 100vh nos filhos */
+  min-height: 100%; /* permite que o documento cresça além da viewport */
   background:  url('/img3.png') no-repeat center center fixed;
   background-size: cover;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  /* prevent horizontal scrolling caused by overflowing elements or global margins */
+  overflow-x: hidden;
+  /* don't force body to be a centered flex container; allow normal document flow so scrolling works */
+}
+
+/* safety: ensure media and images never grow past viewport width */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 main{
-  height: 100%;
+  min-height: 100vh; /* fills viewport but can grow with content */
   width: 100%;
   display: flex;
   justify-content: end;
@@ -48,6 +53,16 @@ nav a{
   display: flex;
   justify-content: center;
   object-position: center;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 section{
