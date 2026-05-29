@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react';
-import './App.css';
 import s from './app.module.css';
 import { Card } from './components/cards';
 import { CardEsp } from './components/cards';
@@ -22,38 +21,34 @@ function App() {
 
   return (
     <>
-     <nav><img src="/logo.png" alt="Logo" className={s.logo} />
-      <a
-        className={s.menu}
-        id="botao-menu"
+     <nav>
+        
+      <img src="/logo.png" alt="Logo" className={s.logo} />
+        <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" id="botao-menu"
         href="#"
         role="button"
         aria-expanded={menuAberto}
         onClick={(e) => {
           e.preventDefault();
           chamarMenu();
-        }}
-      >
-        <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" />
-      </a>
-
+        }}/>
       <div  className={`${s.menuContainer} ${menuAberto ? s.menuAberto : ''}`}>
       <button
               onClick={(e) => {
                 e.preventDefault();
                 fecharMenu();
               }}
-            >
-              <img className={s.menuOpen} src="/openMenu.webp" alt="Menu" />    
+            >        
         </button>
-        <div className={s.opcoesMenu}>
-            <a href="/">Home</a>
-            <a href="/rotas/criar/criar.html">Criar</a>
-            <a href="/rotas/ficha/ficha.html">Ficha</a>
-            <a href="/rotas/perfil/perfil.html">Perfil</a>
+          <div className={s.opcoesMenu}>
+            <a>Home</a>
+            <a>Criar</a>
+            <a>Ficha</a>
+            <a>Perfil</a>
+          </div>
         </div>
-        </div>    
 
+       
 
      </nav>
     <main>
