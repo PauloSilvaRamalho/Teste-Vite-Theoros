@@ -11,9 +11,8 @@ html, body, #root {
   background:  url('/img3.png') no-repeat center center fixed;
   background-size: cover;
   width: 100%;
-  /* prevent horizontal scrolling caused by overflowing elements or global margins */
   overflow-x: hidden;
-  /* don't force body to be a centered flex container; allow normal document flow so scrolling works */
+  margin: 0;
 }
 
 /* safety: ensure media and images never grow past viewport width */
@@ -24,7 +23,7 @@ img, video, iframe {
 
 main{
   min-height: 100vh; /* fills viewport but can grow with content */
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -32,12 +31,13 @@ main{
 }
 
 nav{
-  width: 100%;
+  width: auto;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem ;
+  margin-bottom: 40px;
 }
 
 nav a{

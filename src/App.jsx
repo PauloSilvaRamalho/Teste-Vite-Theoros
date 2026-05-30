@@ -21,17 +21,19 @@ function App() {
 
   return (
     <>
+    {/* HEADER DO SISTEMA */}
      <nav>
-        
+
       <img src="/logo.png" alt="Logo" className={s.logo} />
-        <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" id="botao-menu"
-        href="#"
-        role="button"
-        aria-expanded={menuAberto}
+
+      <a  className={s.menu} href="#" role="button" aria-expanded={menuAberto}
         onClick={(e) => {
           e.preventDefault();
           chamarMenu();
-        }}/>
+        }}>
+        <img className={s.menuImg} src="/imgMenu.webp" alt="Menu" id="botao-menu"/>
+      </a>
+
       <div  className={`${s.menuContainer} ${menuAberto ? s.menuAberto : ''}`}>
       <button
               onClick={(e) => {
@@ -48,19 +50,22 @@ function App() {
           </div>
         </div>
 
-       
-
      </nav>
+
+    {/* MAIN DO SISTEMA */}
     <main>
       <div className={s.maincont}>
+
       <div className={s.container}>
+        <h1 className={s.titulo}>Fichas em destaque:</h1>
         <div id="s2"  className={s.s2}>
-         
           <Card imgSrc={"/img1.jpg"} alt="Card img1" text="Lorem Ipsum..." title="Card 1"className={s.cartaum}/>
-          
         </div>
-        </div>
+      </div>
+
+      <h1>Fichas da comunidade:</h1>
         <div className={s.containerdois}>
+          
         <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>
