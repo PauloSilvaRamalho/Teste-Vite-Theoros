@@ -44,7 +44,7 @@ function App() {
         </button>
           <div className={s.opcoesMenu}>
             <a>Home</a>
-            <a>Criar</a>
+            <a href="/criarFicha.jsx">Criar</a>
             <a>Ficha</a>
             <a>Perfil</a>
           </div>
@@ -56,16 +56,22 @@ function App() {
     <main>
       <div className={s.maincont}>
 
+      {/* SEÇÃO DE FICHAS EM DESTAQUE */}
+      <h1 className={s.titulo}>Fichas em destaque:</h1>
       <div className={s.container}>
-        <h1 className={s.titulo}>Fichas em destaque:</h1>
+       
         <div id="s2"  className={s.s2}>
+          <img src="/seta.webp" className={s.imgSetaEsq} />
           <Card imgSrc={"/img1.jpg"} alt="Card img1" text="Lorem Ipsum..." title="Card 1"className={s.cartaum}/>
+          <img src="/seta.webp" className={s.imgSetaDir} />
         </div>
+        
       </div>
 
-      <h1>Fichas da comunidade:</h1>
-        <div className={s.containerdois}>
-          
+      {/* SEÇÃO DE FICHAS DA COMUNIDADE E DO SITE */}
+      <h1 className={s.titulo}>______________________________</h1>
+      <h1 className={s.titulo}>Fichas da comunidade:</h1>
+      <div className={s.containerdois}>
         <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>
@@ -81,11 +87,29 @@ function App() {
          <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>
+      </div>
+
+      <h1 className={s.titulo}>______________________________</h1>
+      <h1 className={s.titulo}>Fichas do site:</h1>
+      <div className={s.containerdois}>
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>  
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>    
+        <section id="s3" className={s.s3}>
+          <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
+        </section>
          <section id="s3" className={s.s3}>
           <CardEsp imgSrc={"/img2.jpg"} alt="Card img2" title="Card 2" />
         </section>
         
       </div>
+
       </div>
       </main>
     </>
