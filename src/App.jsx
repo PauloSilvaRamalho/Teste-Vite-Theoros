@@ -62,7 +62,7 @@ function App() {
        
         <div id="s2"  className={s.s2}>
           <img src="/seta.webp" className={s.imgSetaEsq} />
-          <Card imgSrc={"/img1.jpg"} alt="Card img1" text="Lorem Ipsum..." title="Card 1"className={s.cartaum}/>
+          <Card imgSrc={"/img1.jpg"} alt="Card img1" text="Azir foi um imperador mortal de Shurima em era muito antiga, um homem orgulhoso que esteve a um passo da imortalidade. Sua insolência fez com que fosse traído e assassinado no momento de seu maior triunfo, mas, agora, milênios depois, ele renasceu como um Ascendente de poder imenso. Com sua cidade antes soterrada agora erguida, Azir busca devolver Shurima à sua antiga glória. Milênios atrás, o império shurimane era um reino com uma multitude de estados vassalos, conquistados por poderosos exércitos liderados por guerreiros semi-invencíveis conhecidos como Ascendentes. Governados por um imperador ambicioso e insaciável, Shurima foi o maior reino de seu tempo: uma terra fértil e abençoada pelos poderes do sol, que brilhava através de um imenso disco dourado, flutuando sobre o templo situado no coração da capital." title="Azir" className={s.cartaum}/>
           <img src="/seta.webp" className={s.imgSetaDir} />
         </div>
         
