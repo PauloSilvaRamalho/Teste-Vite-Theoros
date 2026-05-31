@@ -4,7 +4,7 @@
     box-sizing: border-box; /* corrigido: border -> border-box */
     scroll-behavior: smooth;
     color: rgb(173, 158, 134);
-  }
+}
 
 html, body, #root {
   min-height: 100%; /* permite que o documento cresça além da viewport */

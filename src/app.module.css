@@ -32,6 +32,7 @@
   border-image: linear-gradient(90deg, rgb(94, 77, 46)) 1;
   background: linear-gradient(180deg, #352719 0%, #47352600 100%);
   align-items: center;
+  font-family: 'Arial', sans-serif;
 }
 
 .container, .s2 {

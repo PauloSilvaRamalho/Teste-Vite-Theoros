@@ -31,6 +31,7 @@ body { margin: 0; }
     overflow: hidden;      /* corta o que ultrapassar */
     transition: transform 0.3s ease-in-out;
     text-decoration: none;
+    font-family: 'Arial', sans-serif;
 }
 
 /* conteúdo interno: permitir scroll interno se necessário */
