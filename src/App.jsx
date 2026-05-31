@@ -111,7 +111,11 @@ function App() {
       </div>
 
       </div>
+      <footer>
+        <p className={s.footer}>© 2026 Theoros. Todos os direitos reservados.</p>
+      </footer>
       </main>
+      
     </>
   )
 } 
