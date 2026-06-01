@@ -94,16 +94,13 @@ function prevCard() {
 
       {/* SEÇÃO DE FICHAS EM DESTAQUE */}
       <h1 className={s.titulo}>Fichas em destaque:</h1>
+
       <div className={s.container}>
-       
         <div id="s2"  className={s.s2}>
           <img src="/seta.webp" className={s.imgSetaEsq} role='button' onClick={prevCard}/>
-
           <Card imgSrc={destaqueData.imgSrc} alt={destaqueData.alt} text={destaqueData.text} title={destaqueData.title} className={s.cartaum}/>
           <img src="/seta.webp" className={s.imgSetaDir} role='button' onClick={nextCard}/>
-
         </div>
-        
       </div>
 
       {/* SEÇÃO DE FICHAS DA COMUNIDADE E DO SITE */}
