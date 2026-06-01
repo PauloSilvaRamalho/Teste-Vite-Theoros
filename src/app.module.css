@@ -64,7 +64,12 @@
   height: auto;
   margin-top: -20px;
   margin-bottom: -20px;
-  margin: 20px;
+  margin: 20px; 
+  transition: all 0.1s ease;
+}
+
+.imgSetaEsq:active {
+  transform: scale(0.9);
 }
 
 .imgSetaDir {
@@ -74,6 +79,11 @@
   margin-bottom: -20px;
   margin: 20px;
   transform: scaleX(-1);
+  transition: all 0.1s ease;
+}
+
+.imgSetaDir:active {
+  transform: scaleX(-1) scale(0.9) ;
 }
 
 .containerdois {
